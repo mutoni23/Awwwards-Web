@@ -23,7 +23,6 @@ def Index_view(request):
     return render(request,"index.html",context)
 
 @login_required
-
 def Upload_Project(request):
     '''
     This is the function based view for uploading a project to the site
