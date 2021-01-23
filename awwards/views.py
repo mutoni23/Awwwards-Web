@@ -110,7 +110,6 @@ def AjaxRating(request,pk):
     '''
 
     project = Project.objects.get(id=pk)
-    
     current_user_id = request.user.id
     current_user = request.user.username
     project_rated = Rating.objects.filter(user=current_user_id)
