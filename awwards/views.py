@@ -6,7 +6,6 @@ from django.db.models import Avg
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .serializer import ProjectSerializer
-# from users.models import Profile
 from django.contrib.auth.models import User
 from django.http import JsonResponse
 
