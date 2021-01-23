@@ -8,6 +8,7 @@ class ProjectUploadForm(forms.ModelForm):
     '''
     class Meta:
         model = Project
+        
         fields = ["title","description","link","image"]
 
 class RatingUploadForm(forms.ModelForm):
