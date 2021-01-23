@@ -7,6 +7,7 @@ class Project(models.Model):
     This model will contain the fields for the user uploaded projects
     '''
     title = models.CharField(max_length=40)
+    
     description = models.TextField()
     link = models.CharField(max_length=255)
     image = models.ImageField(upload_to='site_photos/')
