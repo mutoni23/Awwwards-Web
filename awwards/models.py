@@ -9,6 +9,7 @@ class Project(models.Model):
     title = models.CharField(max_length=40
     description = models.TextField()
     link = models.CharField(max_length=255)
+    
     image = models.ImageField(upload_to='site_photos/')
     user = models.ForeignKey(User,on_delete=models.CASCADE)
 
