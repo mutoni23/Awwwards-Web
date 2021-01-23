@@ -86,24 +86,7 @@ def RateProject(request,pk):
         content_average = "0"
         content_percent = 0
 
-    # if request.method == "POST":
-    #     form = RatingUploadForm(request.POST)
-    #     if form.is_valid() and project_rated is None:
-    #         rating = form.save(commit=False)
-    #         rating.user = current_user
-    #         rating.project = project
-    #         rating.save()
-    #         return redirect(RateProject)
-    #     elif form.is_valid() and project_rated is not None:
-    #         project_rated.delete()
-    #         rating = form.save(commit=False)
-    #         rating.user = current_user
-    #         rating.project = project
-    #         rating.save()
-    #         return redirect(RateProject,pk)
-    # else:
-    #     form = RatingUploadForm()
-
+    
     form = RatingUploadForm()
 
     context = {
